@@ -1,0 +1,25 @@
+#include <iostream>
+#include <conio.h>
+#include <stdlib.h>
+using namespace std;
+int main()
+{
+	system("cls");
+	int data[9] = {7,30,8,19,3,1999,1021,99,20};
+	int cari;
+	int flag = 0;
+	cout<<" 7,30,8,19,3,1999,1021,99,20 \n";
+	cout<<"Masukan data yang ingin dicari = ";
+	cin>>cari;
+	for(int z=0; z<9; z++){
+		if(data[z]==cari) flag=1;
+	}
+	if(flag==1)
+	{
+		cout<<"Data ada !\n";
+	}
+	else{
+		cout<<"Data tidak ada !\n";
+	}
+getch();
+}
